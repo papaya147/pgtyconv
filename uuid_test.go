@@ -1,4 +1,4 @@
-package pgtycoon
+package pgtyconv
 
 import (
 	"fmt"

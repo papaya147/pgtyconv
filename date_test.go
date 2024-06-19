@@ -1,4 +1,4 @@
-package pgtycoon
+package pgtyconv
 
 import (
 	"github.com/papaya147/randomize"
