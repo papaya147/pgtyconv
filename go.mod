@@ -1,4 +1,4 @@
-module github.com/papaya147/pgtycoon
+module github.com/papaya147/pgtyconv
 
 go 1.22.1
 
