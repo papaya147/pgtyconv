@@ -54,6 +54,9 @@ func ToUnixDate(d pgtype.Date, u TimeUnit) int64 {
 
 // ToUnixDatePtr converts a pgtype.Date to a *int64.
 func ToUnixDatePtr(d pgtype.Date, u TimeUnit) *int64 {
+	if !d.Valid {
+		return nil
+	}
 	p := ToUnixDate(d, u)
 	return &p
 }
