@@ -1,4 +1,4 @@
-package pgtypes
+package pgtycoon
 
 import (
 	"github.com/jackc/pgx/v5/pgtype"

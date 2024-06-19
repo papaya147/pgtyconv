@@ -1,4 +1,4 @@
-package pgtypes
+package pgtycoon
 
 func ternary[T any](condition bool, trueVal, falseVal T) T {
 	if condition {

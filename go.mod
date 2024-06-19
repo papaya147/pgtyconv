@@ -1,4 +1,4 @@
-module github.com/papaya147/pgtypes
+module github.com/papaya147/pgtycoon
 
 go 1.22.1
 
