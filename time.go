@@ -16,11 +16,11 @@ func FromUnixTime(i int64, u TimeUnit) pgtype.Timestamptz {
 
 // FromUnixTimePtr converts a *int64 to a pgtype.Timestamptz.
 // A nil input will output a null pgtype.Timestamptz, otherwise will call FromUnixTime.
-func FromUnixTimePtr(i *int64, u TimeUnit) pgtype.Date {
+func FromUnixTimePtr(i *int64, u TimeUnit) pgtype.Timestamptz {
 	if i == nil {
-		return pgtype.Date{}
+		return pgtype.Timestamptz{}
 	}
-	return FromUnixDate(int64(*i), u)
+	return FromUnixTime(int64(*i), u)
 }
 
 // ToUnixTime converts a pgtype.Timestamptz to a int64.
